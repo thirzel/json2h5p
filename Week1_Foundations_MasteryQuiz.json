@@ -1,0 +1,992 @@
+{
+  "title": "Week 1 – Mastery Quiz: Foundations of American Government",
+  "introduction": "Pass with 80% or higher to unlock Week 2. Instant feedback is provided for every question.",
+  "questions": [
+    {
+      "type": "multichoice",
+      "question": "Which of the following was a major weakness of the Articles of Confederation?",
+      "options": [
+        {
+          "text": "Congress could not declare war",
+          "correct": false,
+          "feedback": "Incorrect — Congress could declare war under the Articles."
+        },
+        {
+          "text": "Congress could not levy taxes",
+          "correct": true,
+          "feedback": "Correct — Without the power to tax, the national government struggled to fund operations."
+        },
+        {
+          "text": "States could not coin money",
+          "correct": false,
+          "feedback": "Incorrect — States could and did coin their own money."
+        },
+        {
+          "text": "There was a strong executive branch",
+          "correct": false,
+          "feedback": "Incorrect — There was no separate executive branch under the Articles."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Under the Articles of Confederation, who held the most political power?",
+      "options": [
+        {
+          "text": "The national government",
+          "correct": false,
+          "feedback": "Incorrect — The national government was deliberately weak."
+        },
+        {
+          "text": "State governments",
+          "correct": true,
+          "feedback": "Correct — States retained most powers under the Articles."
+        },
+        {
+          "text": "The executive branch",
+          "correct": false,
+          "feedback": "Incorrect — There was no executive branch under the Articles."
+        },
+        {
+          "text": "The judicial branch",
+          "correct": false,
+          "feedback": "Incorrect — There was no national judiciary under the Articles."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Which of the following was NOT a weakness of the the Articles of Confederation?",
+      "options": [
+        {
+          "text": "Lack of power to tax",
+          "correct": false,
+          "feedback": "Incorrect — This was a key weakness."
+        },
+        {
+          "text": "No national judiciary",
+          "correct": false,
+          "feedback": "Incorrect — The Articles lacked a national court system."
+        },
+        {
+          "text": "Strong system of checks and balances",
+          "correct": true,
+          "feedback": "Correct — The Articles did not create a strong system of checks and balances."
+        },
+        {
+          "text": "Inability to regulate interstate commerce",
+          "correct": false,
+          "feedback": "Incorrect — Congress could not regulate interstate commerce under the Articles."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Shays’ Rebellion was significant because it:",
+      "options": [
+        {
+          "text": "Led to the Civil War",
+          "correct": false,
+          "feedback": "Incorrect — It occurred in the 1780s, long before the Civil War."
+        },
+        {
+          "text": "Showed the strength of the Articles of Confederation",
+          "correct": false,
+          "feedback": "Incorrect — It highlighted weakness, not strength."
+        },
+        {
+          "text": "Demonstrated the weakness of the national government",
+          "correct": true,
+          "feedback": "Correct — The national government struggled to respond effectively."
+        },
+        {
+          "text": "Was the first use of the Bill of Rights",
+          "correct": false,
+          "feedback": "Incorrect — The Bill of Rights came after the Constitution."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "The Great Compromise settled disputes between:",
+      "options": [
+        {
+          "text": "North and South over slavery",
+          "correct": false,
+          "feedback": "Incorrect — That was addressed by other compromises."
+        },
+        {
+          "text": "Large and small states over representation",
+          "correct": true,
+          "feedback": "Correct — It balanced interests via a bicameral legislature."
+        },
+        {
+          "text": "Federalists and Anti-Federalists",
+          "correct": false,
+          "feedback": "Incorrect — That debate came during ratification."
+        },
+        {
+          "text": "Congress and the President",
+          "correct": false,
+          "feedback": "Incorrect — Not the subject of the Great Compromise."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "The Great Compromise created:",
+      "options": [
+        {
+          "text": "A unicameral legislature",
+          "correct": false,
+          "feedback": "Incorrect — It created two chambers."
+        },
+        {
+          "text": "A bicameral legislature",
+          "correct": true,
+          "feedback": "Correct — The House by population and the Senate with equal representation."
+        },
+        {
+          "text": "A parliamentary system",
+          "correct": false,
+          "feedback": "Incorrect — The U.S. is a presidential system."
+        },
+        {
+          "text": "An executive council",
+          "correct": false,
+          "feedback": "Incorrect — The Constitution provides for a single executive."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "The Three-Fifths Compromise dealt with:",
+      "options": [
+        {
+          "text": "Counting enslaved people for representation and taxation",
+          "correct": true,
+          "feedback": "Correct — Each enslaved person was counted as three-fifths for these purposes."
+        },
+        {
+          "text": "Equal representation in the Senate",
+          "correct": false,
+          "feedback": "Incorrect — Equal representation in the Senate came from the Great Compromise."
+        },
+        {
+          "text": "The Electoral College",
+          "correct": false,
+          "feedback": "Incorrect — Different issue."
+        },
+        {
+          "text": "The power to tax exports",
+          "correct": false,
+          "feedback": "Incorrect — A separate debate."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "The Commerce Compromise gave Congress power to regulate:",
+      "options": [
+        {
+          "text": "Only imports",
+          "correct": false,
+          "feedback": "Incorrect — It was broader than that."
+        },
+        {
+          "text": "Both interstate and foreign trade",
+          "correct": true,
+          "feedback": "Correct — Congress gained authority over interstate and foreign commerce."
+        },
+        {
+          "text": "Trade between states but not foreign trade",
+          "correct": false,
+          "feedback": "Incorrect — It included foreign commerce too."
+        },
+        {
+          "text": "Trade in manufactured goods only",
+          "correct": false,
+          "feedback": "Incorrect — Not limited to manufactured goods."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Which plan proposed a legislature based solely on population?",
+      "options": [
+        {
+          "text": "Virginia Plan",
+          "correct": true,
+          "feedback": "Correct — The Virginia Plan favored representation by population."
+        },
+        {
+          "text": "New Jersey Plan",
+          "correct": false,
+          "feedback": "Incorrect — The New Jersey Plan favored equal representation."
+        },
+        {
+          "text": "Connecticut Plan",
+          "correct": false,
+          "feedback": "Incorrect — That was the compromise blending both approaches."
+        },
+        {
+          "text": "Albany Plan",
+          "correct": false,
+          "feedback": "Incorrect — A colonial-era plan predating independence."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Which plan favored equal representation for all states?",
+      "options": [
+        {
+          "text": "Virginia Plan",
+          "correct": false,
+          "feedback": "Incorrect — That plan favored representation by population."
+        },
+        {
+          "text": "New Jersey Plan",
+          "correct": true,
+          "feedback": "Correct — Equal votes per state."
+        },
+        {
+          "text": "Connecticut Plan",
+          "correct": false,
+          "feedback": "Incorrect — The compromise combined population and equality depending on chamber."
+        },
+        {
+          "text": "Madison Plan",
+          "correct": false,
+          "feedback": "Incorrect — Not a formal plan name."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "The Declaration of Independence primarily:",
+      "options": [
+        {
+          "text": "Created a new government",
+          "correct": false,
+          "feedback": "Incorrect — It declared separation but did not create the Constitution."
+        },
+        {
+          "text": "Announced separation from Britain",
+          "correct": true,
+          "feedback": "Correct — It justified and announced independence."
+        },
+        {
+          "text": "Outlined the Articles of Confederation",
+          "correct": false,
+          "feedback": "Incorrect — Different document."
+        },
+        {
+          "text": "Established the Bill of Rights",
+          "correct": false,
+          "feedback": "Incorrect — That came later as amendments."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "According to the Declaration of Independence, governments derive their power from:",
+      "options": [
+        {
+          "text": "Military strength",
+          "correct": false,
+          "feedback": "Incorrect — Power comes from consent."
+        },
+        {
+          "text": "Consent of the governed",
+          "correct": true,
+          "feedback": "Correct — Central to the Declaration’s philosophy."
+        },
+        {
+          "text": "The king",
+          "correct": false,
+          "feedback": "Incorrect — The Declaration rejects monarchy as a source of authority."
+        },
+        {
+          "text": "State legislatures",
+          "correct": false,
+          "feedback": "Incorrect — Not what the Declaration asserts."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Which document replaced the Articles of Confederation?",
+      "options": [
+        {
+          "text": "Declaration of Independence",
+          "correct": false,
+          "feedback": "Incorrect — That preceded the Articles."
+        },
+        {
+          "text": "U.S. Constitution",
+          "correct": true,
+          "feedback": "Correct — The Constitution replaced the Articles in 1789."
+        },
+        {
+          "text": "Bill of Rights",
+          "correct": false,
+          "feedback": "Incorrect — The first ten amendments to the Constitution."
+        },
+        {
+          "text": "Federalist Papers",
+          "correct": false,
+          "feedback": "Incorrect — Persuasive essays during ratification."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Which part of the Constitution outlines its purposes?",
+      "options": [
+        {
+          "text": "Bill of Rights",
+          "correct": false,
+          "feedback": "Incorrect — Those are amendments protecting rights."
+        },
+        {
+          "text": "Preamble",
+          "correct": true,
+          "feedback": "Correct — It states goals like justice and the common defense."
+        },
+        {
+          "text": "Article I",
+          "correct": false,
+          "feedback": "Incorrect — Article I outlines legislative powers."
+        },
+        {
+          "text": "Supremacy Clause",
+          "correct": false,
+          "feedback": "Incorrect — That is in Article VI."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Which of the following is NOT a goal listed in the Preamble?",
+      "options": [
+        {
+          "text": "Establish justice",
+          "correct": false,
+          "feedback": "Incorrect — This is listed."
+        },
+        {
+          "text": "Ensure domestic tranquility",
+          "correct": false,
+          "feedback": "Incorrect — Also listed."
+        },
+        {
+          "text": "Provide for the common defense",
+          "correct": false,
+          "feedback": "Incorrect — Also listed."
+        },
+        {
+          "text": "Abolish state governments",
+          "correct": true,
+          "feedback": "Correct — The Constitution does not abolish states."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Which branch can declare laws unconstitutional?",
+      "options": [
+        {
+          "text": "Legislative",
+          "correct": false,
+          "feedback": "Incorrect — Judicial review belongs to the courts."
+        },
+        {
+          "text": "Judicial",
+          "correct": true,
+          "feedback": "Correct — The judicial branch can strike down unconstitutional laws."
+        },
+        {
+          "text": "Executive",
+          "correct": false,
+          "feedback": "Incorrect — The executive enforces laws."
+        },
+        {
+          "text": "State governments",
+          "correct": false,
+          "feedback": "Incorrect — States cannot nullify federal law."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "The President’s veto power is an example of:",
+      "options": [
+        {
+          "text": "Separation of powers",
+          "correct": false,
+          "feedback": "Incomplete — It is specifically a check across branches."
+        },
+        {
+          "text": "Checks and balances",
+          "correct": true,
+          "feedback": "Correct — The executive checks the legislature via veto."
+        },
+        {
+          "text": "Federalism",
+          "correct": false,
+          "feedback": "Incorrect — Federalism is national vs. state authority."
+        },
+        {
+          "text": "Popular sovereignty",
+          "correct": false,
+          "feedback": "Incorrect — That is power from the people."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Which chamber confirms presidential appointments?",
+      "options": [
+        {
+          "text": "House of Representatives",
+          "correct": false,
+          "feedback": "Incorrect — The House does not confirm appointments."
+        },
+        {
+          "text": "Senate",
+          "correct": true,
+          "feedback": "Correct — The Senate provides advice and consent."
+        },
+        {
+          "text": "Supreme Court",
+          "correct": false,
+          "feedback": "Incorrect — The Court does not confirm appointments."
+        },
+        {
+          "text": "Executive Office",
+          "correct": false,
+          "feedback": "Incorrect — Not a confirming body."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Congress can override a presidential veto with:",
+      "options": [
+        {
+          "text": "A simple majority in both houses",
+          "correct": false,
+          "feedback": "Incorrect — A higher threshold is required."
+        },
+        {
+          "text": "A two-thirds vote in both houses",
+          "correct": true,
+          "feedback": "Correct — Two-thirds in the House and Senate."
+        },
+        {
+          "text": "Unanimous consent",
+          "correct": false,
+          "feedback": "Incorrect — Not required."
+        },
+        {
+          "text": "A ruling from the Supreme Court",
+          "correct": false,
+          "feedback": "Incorrect — The Court does not override vetoes."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Which branch negotiates treaties?",
+      "options": [
+        {
+          "text": "Executive",
+          "correct": true,
+          "feedback": "Correct — The President (executive) negotiates treaties."
+        },
+        {
+          "text": "Legislative",
+          "correct": false,
+          "feedback": "Incorrect — The Senate approves, but the executive negotiates."
+        },
+        {
+          "text": "Judicial",
+          "correct": false,
+          "feedback": "Incorrect — The courts interpret laws and treaties."
+        },
+        {
+          "text": "State governments",
+          "correct": false,
+          "feedback": "Incorrect — States cannot negotiate treaties."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Federalism is best described as:",
+      "options": [
+        {
+          "text": "Power divided between national and state governments",
+          "correct": true,
+          "feedback": "Correct — Shared sovereignty across levels."
+        },
+        {
+          "text": "Power concentrated at the national level",
+          "correct": false,
+          "feedback": "Incorrect — That would be a unitary system."
+        },
+        {
+          "text": "Power concentrated at the state level",
+          "correct": false,
+          "feedback": "Incorrect — More like the Articles."
+        },
+        {
+          "text": "A system with no written constitution",
+          "correct": false,
+          "feedback": "Incorrect — The U.S. has a written constitution."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Popular sovereignty means:",
+      "options": [
+        {
+          "text": "The majority always rules without exception",
+          "correct": false,
+          "feedback": "Incorrect — Rights and structures constrain majorities."
+        },
+        {
+          "text": "Government gets its authority from the people",
+          "correct": true,
+          "feedback": "Correct — Authority comes from the consent of the governed."
+        },
+        {
+          "text": "States have more power than the national government",
+          "correct": false,
+          "feedback": "Incorrect — That’s not what the term means."
+        },
+        {
+          "text": "The President is chosen by Congress",
+          "correct": false,
+          "feedback": "Incorrect — The Electoral College selects the President."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Limited government means:",
+      "options": [
+        {
+          "text": "The President must be elected every two years",
+          "correct": false,
+          "feedback": "Incorrect — Presidential terms are four years."
+        },
+        {
+          "text": "Government actions are restricted by law",
+          "correct": true,
+          "feedback": "Correct — The Constitution limits governmental power."
+        },
+        {
+          "text": "States can ignore national laws",
+          "correct": false,
+          "feedback": "Incorrect — Federal law is supreme within its sphere."
+        },
+        {
+          "text": "Only Congress can pass laws",
+          "correct": false,
+          "feedback": "Incorrect — Congress does legislate, but limited government is broader."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "The principle of separation of powers:",
+      "options": [
+        {
+          "text": "Divides authority among three branches",
+          "correct": true,
+          "feedback": "Correct — Legislative, executive, and judicial powers are separated."
+        },
+        {
+          "text": "Gives all power to Congress",
+          "correct": false,
+          "feedback": "Incorrect — Power is divided, not unified."
+        },
+        {
+          "text": "Allows the executive to make laws",
+          "correct": false,
+          "feedback": "Incorrect — Lawmaking is primarily legislative."
+        },
+        {
+          "text": "Gives states veto power over federal law",
+          "correct": false,
+          "feedback": "Incorrect — That would contradict supremacy."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Which principle means that government is not above the law?",
+      "options": [
+        {
+          "text": "Judicial review",
+          "correct": false,
+          "feedback": "Incorrect — That’s a court power to review laws."
+        },
+        {
+          "text": "Rule of law",
+          "correct": true,
+          "feedback": "Correct — Everyone, including officials, is bound by law."
+        },
+        {
+          "text": "Popular sovereignty",
+          "correct": false,
+          "feedback": "Incorrect — That’s authority from the people."
+        },
+        {
+          "text": "Federalism",
+          "correct": false,
+          "feedback": "Incorrect — Division of power across levels of government."
+        }
+      ]
+    },
+    {
+      "type": "multiselect",
+      "question": "Which of these were weaknesses of the Articles of Confederation? (Select all that apply)",
+      "options": [
+        {
+          "text": "No power to tax",
+          "correct": true
+        },
+        {
+          "text": "No national court system",
+          "correct": true
+        },
+        {
+          "text": "No power to regulate interstate commerce",
+          "correct": true
+        },
+        {
+          "text": "Strong executive branch",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "Correct — these reflect the core features/limits described for this topic.",
+        "incorrect": "Not quite — review the chapter and try again. All correct options must be selected."
+      }
+    },
+    {
+      "type": "multiselect",
+      "question": "Which issues were settled by the Great Compromise? (Select all that apply)",
+      "options": [
+        {
+          "text": "Representation in the Senate",
+          "correct": true
+        },
+        {
+          "text": "Representation in the House",
+          "correct": true
+        },
+        {
+          "text": "Slavery",
+          "correct": false
+        },
+        {
+          "text": "Election of the President",
+          "correct": false
+        }
+      ],
+      "feedback": {
+        "correct": "Correct — these reflect the core features/limits described for this topic.",
+        "incorrect": "Not quite — review the chapter and try again. All correct options must be selected."
+      }
+    },
+    {
+      "type": "multiselect",
+      "question": "Which of these are checks the legislative branch has over the executive branch? (Select all that apply)",
+      "options": [
+        {
+          "text": "Override a veto",
+          "correct": true
+        },
+        {
+          "text": "Approve treaties",
+          "correct": true
+        },
+        {
+          "text": "Declare laws unconstitutional",
+          "correct": false
+        },
+        {
+          "text": "Confirm appointments",
+          "correct": true
+        }
+      ],
+      "feedback": {
+        "correct": "Correct — these reflect the core features/limits described for this topic.",
+        "incorrect": "Not quite — review the chapter and try again. All correct options must be selected."
+      }
+    },
+    {
+      "type": "multiselect",
+      "question": "Which of these are principles of the U.S. Constitution? (Select all that apply)",
+      "options": [
+        {
+          "text": "Federalism",
+          "correct": true
+        },
+        {
+          "text": "Popular sovereignty",
+          "correct": true
+        },
+        {
+          "text": "Divine right of kings",
+          "correct": false
+        },
+        {
+          "text": "Separation of powers",
+          "correct": true
+        }
+      ],
+      "feedback": {
+        "correct": "Correct — these reflect the core features/limits described for this topic.",
+        "incorrect": "Not quite — review the chapter and try again. All correct options must be selected."
+      }
+    },
+    {
+      "type": "shortanswer",
+      "question": "Name one event that highlighted the weakness of the Articles of Confederation.",
+      "keywords": [
+        "shays",
+        "shays' rebellion",
+        "shays’ rebellion"
+      ],
+      "feedback": {
+        "correct": "Correct — Shays’ Rebellion exposed the national government’s inability to respond effectively.",
+        "incorrect": "One example is Shays’ Rebellion. Try again."
+      }
+    },
+    {
+      "type": "shortanswer",
+      "question": "Which compromise counted enslaved people as part of the population for representation and taxation?",
+      "keywords": [
+        "three-fifths",
+        "3/5",
+        "three fifths"
+      ],
+      "feedback": {
+        "correct": "Correct — The Three-Fifths Compromise.",
+        "incorrect": "The Three-Fifths Compromise is the answer."
+      }
+    },
+    {
+      "type": "shortanswer",
+      "question": "In the Preamble, what phrase refers to improving the U.S. over time?",
+      "keywords": [
+        "more perfect union"
+      ],
+      "feedback": {
+        "correct": "Correct — “to form a more perfect union.”",
+        "incorrect": "Look for the phrase “a more perfect union.”"
+      }
+    },
+    {
+      "type": "shortanswer",
+      "question": "Which branch of government has the power to declare war?",
+      "keywords": [
+        "congress",
+        "legislative"
+      ],
+      "feedback": {
+        "correct": "Correct — Congress holds the power to declare war.",
+        "incorrect": "Congress (the legislative branch) declares war."
+      }
+    },
+    {
+      "type": "shortanswer",
+      "question": "What is the name for the idea that government must operate within certain bounds set by the people?",
+      "keywords": [
+        "limited government"
+      ],
+      "feedback": {
+        "correct": "Correct — Limited government.",
+        "incorrect": "That principle is called limited government."
+      }
+    },
+    {
+      "type": "multichoice",
+      "question": "Scenario: Congress passes a law banning all protests within 50 miles of Washington, D.C. The Supreme Court rules the law unconstitutional. This is an example of:",
+      "options": [
+        {
+          "text": "Judicial review",
+          "correct": true,
+          "feedback": "Correct — The courts can strike down laws that violate the Constitution."
+        },
+        {
+          "text": "Separation of powers",
+          "correct": false,
+          "feedback": "Incorrect — While powers are separated, this is specifically judicial review."
+        },
+        {
+          "text": "Federalism",
+          "correct": false,
+          "feedback": "Incorrect — This is not about national vs. state power."
+        },
+        {
+          "text": "Executive privilege",
+          "correct": false,
+          "feedback": "Incorrect — Not related to the executive’s confidentiality claims."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Scenario: Delegates from smaller states fear losing influence if representation is based only on population. This concern led to which plan?",
+      "options": [
+        {
+          "text": "Virginia Plan",
+          "correct": false,
+          "feedback": "Incorrect — The Virginia Plan favored representation by population."
+        },
+        {
+          "text": "New Jersey Plan",
+          "correct": true,
+          "feedback": "Correct — It favored equal representation for states regardless of size."
+        },
+        {
+          "text": "Great Compromise",
+          "correct": false,
+          "feedback": "Incorrect — That was the final blended solution."
+        },
+        {
+          "text": "Three-Fifths Compromise",
+          "correct": false,
+          "feedback": "Incorrect — That addressed counting enslaved people for representation and taxation."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Scenario: During a crisis, the national government cannot raise funds for the military. This reflects a weakness of:",
+      "options": [
+        {
+          "text": "The Constitution",
+          "correct": false,
+          "feedback": "Incorrect — The Constitution grants power to tax."
+        },
+        {
+          "text": "The Articles of Confederation",
+          "correct": true,
+          "feedback": "Correct — Under the Articles, Congress lacked the power to tax."
+        },
+        {
+          "text": "The Bill of Rights",
+          "correct": false,
+          "feedback": "Incorrect — Not related to funding national defense."
+        },
+        {
+          "text": "The Declaration of Independence",
+          "correct": false,
+          "feedback": "Incorrect — Not a governing framework."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Scenario: Voters in a state pass a ballot initiative to legalize a certain drug, even though federal law prohibits it. This situation best reflects:",
+      "options": [
+        {
+          "text": "Rule of law",
+          "correct": false,
+          "feedback": "Incorrect — That concept is broader."
+        },
+        {
+          "text": "Federalism",
+          "correct": true,
+          "feedback": "Correct — It highlights tensions between state decisions and federal policy."
+        },
+        {
+          "text": "Separation of powers",
+          "correct": false,
+          "feedback": "Incorrect — Not about branches of government."
+        },
+        {
+          "text": "Popular sovereignty",
+          "correct": false,
+          "feedback": "Incorrect — While voters acted, the key concept is federal vs. state authority."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Scenario: A new government declares that its power comes from the \"will of the people.\" Which founding principle does this reflect?",
+      "options": [
+        {
+          "text": "Federalism",
+          "correct": false,
+          "feedback": "Incorrect — Federalism concerns division of power across levels."
+        },
+        {
+          "text": "Popular sovereignty",
+          "correct": true,
+          "feedback": "Correct — Authority derives from the people."
+        },
+        {
+          "text": "Judicial review",
+          "correct": false,
+          "feedback": "Incorrect — That is a court power."
+        },
+        {
+          "text": "Checks and balances",
+          "correct": false,
+          "feedback": "Incorrect — That’s inter-branch oversight."
+        }
+      ]
+    },
+    {
+      "type": "multichoice",
+      "question": "Scenario: The President signs a treaty with another country, but it does not take effect until approved by two-thirds of the Senate. This is an example of:",
+      "options": [
+        {
+          "text": "Checks and balances",
+          "correct": true,
+          "feedback": "Correct — Executive negotiation checked by Senate approval."
+        },
+        {
+          "text": "Judicial review",
+          "correct": false,
+          "feedback": "Incorrect — Courts are not involved here."
+        },
+        {
+          "text": "Federalism",
+          "correct": false,
+          "feedback": "Incorrect — Not about federal vs. state power."
+        },
+        {
+          "text": "Popular sovereignty",
+          "correct": false,
+          "feedback": "Incorrect — Not the relevant principle."
+        }
+      ]
+    }
+  ],
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 79,
+      "feedback": "Review the readings and try again. You can retry until you master 80%+."
+    },
+    {
+      "from": 80,
+      "to": 100,
+      "feedback": "Excellent! You’ve mastered this week’s key ideas."
+    }
+  ],
+  "passPercentage": 80,
+  "showSolutions": true,
+  "allowRetry": true,
+  "randomizeQuestions": true
+}
