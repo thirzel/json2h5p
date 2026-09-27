@@ -1,36 +1,47 @@
-# JSON to H5P Converter
+# json2h5p
 
-A Python tool that converts educational JSON content to H5P interactive format.
+Convert educational content from simple JSON files into **H5P packages** (`.h5p`) that can be uploaded to any H5P-compatible platform (Moodle, WordPress, Lumi, Canvas, ...).
 
-## Overview
+Based on [artturner/json2h5p](https://github.com/artturner/json2h5p), with the following fixes and improvements over the upstream version:
 
-This converter transforms structured JSON quiz and branching scenario files into H5P packages that can be used on any H5P-compatible platform (Moodle, WordPress, Canvas, etc.).
+- **Two dedicated scripts** — one per content type:
+  - `json2h5p_question_set.py` converts **quizzes** (files with a `questions` array) to H5P **Question Sets**
+  - `json2h5p_branching.py` converts **branching scenarios** (files with a `nodes` array) to H5P **Branching Scenarios**
+- **Directory scanning** — each script converts every matching `.json` file in its folder (upstream only converts two hardcoded filenames and silently ignores everything else)
+- **Clear errors** — invalid JSON is reported with file, line, and column instead of failing silently
+- **Correct library handling** — all embedded H5P libraries are declared in `preloadedDependencies` (upstream declared only the main library, causing import failures)
+- **Valid Branching Scenario structure** — quiz nodes use `H5P.BranchingQuestion` (the only valid question type inside a Branching Scenario), navigation uses real numeric `nextContentId` indexes (upstream embedded `H5P.MultiChoice`, which platforms reject)
+- **Real titles** — the `title` from your JSON is written into `h5p.json` (upstream hardcoded "Converted Content")
 
-## Features
+## Requirements
 
-- **Quiz Conversion**: Converts multiple choice, multi-select, and short answer questions to H5P Question Set format
-- **Branching Scenarios**: Converts interactive story/decision trees to H5P Branching Scenario format  
-- **Multiple Question Types**: Supports various question formats with feedback
-- **H5P Package Creation**: Generates proper .h5p ZIP files with correct structure
-- **Educational Content**: Designed for academic and training content
+- Python 3.6+ (standard library only)
+- An H5P-compatible platform with the required libraries installed (see [Platform notes](#platform-notes))
 
-## Supported JSON Formats
+## Usage
 
-### Quiz Format
+Put your JSON files and both scripts in the same folder, then run the script matching your content type:
+
+```bash
+python json2h5p_question_set.py   # converts every quiz .json in the folder
+python json2h5p_branching.py      # converts every scenario .json in the folder
+```
+
+Each script converts only its own file type and prints what it skipped and why (quiz files are skipped by the scenario script and vice versa). The output `.h5p` file is created next to each input file.
+
+## Quiz format (`json2h5p_question_set.py`)
+
 ```json
 {
   "title": "Quiz Title",
-  "introduction": "Quiz description",
+  "introduction": "Quiz description shown on the intro page",
   "questions": [
     {
       "type": "multichoice",
       "question": "Question text",
       "options": [
-        {
-          "text": "Option A",
-          "correct": true,
-          "feedback": "Explanation"
-        }
+        { "text": "Option A", "correct": true, "feedback": "Shown when this option is chosen" },
+        { "text": "Option B", "correct": false, "feedback": "Shown when this option is chosen" }
       ]
     }
   ],
@@ -40,99 +51,93 @@ This converter transforms structured JSON quiz and branching scenario files into
 }
 ```
 
-### Branching Scenario Format
+Rules:
+
+- Exactly **one** option per question has `"correct": true`
+- `passPercentage`, `allowRetry`, `randomizeQuestions` are optional (defaults: 50 / true / false)
+- Optional `overallFeedback` list with `from`/`to`/`feedback` ranges
+
+## Branching scenario format (`json2h5p_branching.py`)
+
 ```json
 {
-  "title": "Scenario Title", 
-  "introduction": "Scenario description",
+  "title": "Scenario Title",
+  "introduction": "Subtitle on the start screen",
   "nodes": [
     {
       "id": "start",
-      "type": "content",
-      "content": "Story text",
+      "type": "branch",
+      "content": "Which way do you go?",
       "choices": [
-        {
-          "text": "Choice A",
-          "next": "node_id"
-        }
+        { "text": "Left", "next": "left_end" },
+        { "text": "Right", "next": "right_end" }
       ]
+    },
+    {
+      "id": "left_end",
+      "type": "quiz",
+      "question": "Answer this to finish:",
+      "options": [
+        { "text": "Option A", "correct": true, "feedback": "Feedback shown after choosing" },
+        { "text": "Option B", "correct": false, "feedback": "Feedback shown after choosing" }
+      ],
+      "next": "end"
+    },
+    {
+      "id": "right_end",
+      "type": "content",
+      "content": "The end. Thanks for playing!",
+      "choices": []
     }
   ]
 }
 ```
 
-## Installation
+Node types:
+   Type | H5P library | Purpose |
+ |---|---|---|
+ | `content` | H5P.AdvancedText 1.1 | Text screen with a single "Proceed" target |
+ | `branch` | H5P.BranchingQuestion 1.0 | Question with multiple alternatives |
+ | `quiz` | H5P.BranchingQuestion 1.0 | Same as `branch`; `options` + `next` instead of `choices` |
 
-1. Clone this repository:
-```bash
-git clone https://github.com/yourusername/json2h5p.git
-cd json2h5p
-```
+Navigation rules:
 
-2. Run the converter:
-```bash
-python json_to_h5p.py
-```
+- `"next": "<node_id>"` points at the `id` of another node — the first node in `nodes` is where the scenario starts
+- A `content` node with **multiple** `choices` automatically becomes a BranchingQuestion (text screens support only one target)
+- `"next": "end"` (or a node with empty `choices` / no `next`) ends the scenario at the default end screen
+- Inside a Branching Scenario, questions are pure branching: there is no correct/incorrect scoring, so the `correct` flag is ignored — use per-option `feedback` text
+- Unknown `next` ids print a warning and end the scenario
 
-## Usage
+## String sanitization rules (important)
 
-Place your JSON files in the same directory as the converter and run:
+JSON must parse cleanly and survive any editor/encoding. Keep every string value:
 
-```bash
-python json_to_h5p.py
-```
+1. **Pure ASCII** — replace curly quotes (`“”`), en/em dashes (`–` `—`), math symbols (`√ ∑ ≤ ≈ ² ×`), and currency signs (`€ £ ¥`) with plain equivalents (`\"`, `-`, "the square root of", "approximately", `EUR`/`GBP`/`JPY`)
+2. **Escape double quotes** inside strings: `\"soft dollars\"`
+3. **No literal line breaks inside strings** — use the `\n` escape; tables work well as `- item: value` lists
+4. **No leftover artifacts** — remove stray generator sentences like "Here are the next five questions formatted exactly as per your instructions:"
 
-The script will automatically detect and convert:
-- `*.json` files matching quiz format → `*.h5p` Question Set packages
-- `*.json` files matching branching scenario format → `*.h5p` Branching Scenario packages
-
-### Manual Conversion
+Quick validation before converting:
 
 ```python
-from json_to_h5p import H5PConverter
-
-converter = H5PConverter()
-
-# Convert quiz
-converter.convert_quiz_to_h5p('quiz.json', 'quiz.h5p')
-
-# Convert branching scenario  
-converter.convert_branching_scenario_to_h5p('scenario.json', 'scenario.h5p')
+import json
+d = json.load(open("my_quiz.json", encoding="utf-8"))
+assert all(sum(o["correct"] for o in q["options"]) == 1 for q in d["questions"])
 ```
 
-## Question Types Supported
+## Platform notes
 
-- **Multiple Choice**: Single correct answer with feedback
-- **Multi-Select**: Multiple correct answers required
-- **Short Answer**: Text input with keyword matching
-- **Branching Content**: Interactive decision trees with quiz elements
+The generated `.h5p` contains `h5p.json` + `content/content.json` but **no library code** — your platform resolves the libraries from its installed set:
+ | Library | Used by |
+ |---|---|
+ | H5P.QuestionSet 1.20 | quizzes |
+ | H5P.MultiChoice 1.16 | quizzes |
+ | H5P.BranchingScenario 1.10 | scenarios |
+ | H5P.BranchingQuestion 1.0 | scenarios |
+ | H5P.AdvancedText 1.1 | scenarios |
 
-## Output
-
-The converter generates `.h5p` files that can be:
-- Uploaded to H5P-compatible Learning Management Systems
-- Embedded in websites using H5P players
-- Shared as standalone interactive content
-
-## Example Files
-
-This repository includes sample educational content:
-- `Week1_Foundations_MasteryQuiz.json` - Comprehensive civics quiz
-- `Week1_CivicLab_Philadelphia1787.json` - Interactive historical simulation
-
-## Requirements
-
-- Python 3.6+
-- Standard library only (no external dependencies)
+If a library version is missing, install it once from the H5P Hub (or via *Libraries → Upload*), then re-import the `.h5p`. The versions above can be adjusted in the scripts' library constants if your platform ships different ones.
 
 ## License
 
-MIT License - Feel free to use for educational purposes.
-
-## Contributing
-
-Contributions welcome! Please feel free to submit pull requests or open issues for:
-- Additional question types
-- Enhanced H5P features  
-- Bug fixes
-- Documentation improvements
+MIT — see the upstream [artturner/json2h5p](https://github.com/artturner/json2h5p) repository.
